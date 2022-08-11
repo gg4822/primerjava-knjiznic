@@ -1,0 +1,25 @@
+.recipe-img {
+  max-width: 90%;
+  max-height: 200px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  white-space: nowrap;
+  word-break: unset;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recipe-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.recipe-footer {
+  display: flex;
+}

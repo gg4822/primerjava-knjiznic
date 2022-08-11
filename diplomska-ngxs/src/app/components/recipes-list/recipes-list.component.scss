@@ -1,0 +1,13 @@
+.recipes-container {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 1%;
+}
+
+.grid-item {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+}

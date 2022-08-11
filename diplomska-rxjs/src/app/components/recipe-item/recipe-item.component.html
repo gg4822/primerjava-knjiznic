@@ -1,0 +1,16 @@
+<div class="recipe-item-container">
+  <div class="title" title="{{ recipe.title }}">{{ recipe.title }}</div>
+  <img src="{{ recipe.image }}" alt="{{ recipe.title }}" class="recipe-img" />
+  <div class="recipe-footer">
+    <dx-button
+      icon="fas fa-star"
+      [text]="favoritesText"
+      (onClick)="addToFavorites()"
+    ></dx-button>
+    <dx-button
+      icon="fas fa-info"
+      text="More"
+      (onClick)="redirectToRecipe()"
+    ></dx-button>
+  </div>
+</div>

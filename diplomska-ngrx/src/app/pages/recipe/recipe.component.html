@@ -1,0 +1,23 @@
+<div class="content-block responsive-paddings dx-card">
+  <h2>{{ recipe.title }}</h2>
+  <img src="{{ recipe.image }}" alt="Recipe image" style="max-height: 50vh" />
+  <h2>Ingredients</h2>
+  <ul>
+    <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+  </ul>
+  <h2>Steps</h2>
+  <ol>
+    <li *ngFor="let step of recipe.instructions">{{ step.text }}</li>
+  </ol>
+  <dx-button
+    icon="fas fa-arrow-left"
+    text="Back"
+    (onClick)="back()"
+    style="margin-right: 5px"
+  ></dx-button>
+  <dx-button
+    icon="fas fa-star"
+    [text]="favoritesText"
+    (onClick)="addToFavorites()"
+  ></dx-button>
+</div>
